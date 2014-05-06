@@ -488,7 +488,7 @@ R:
 
 .. code-block:: r
 
-    aggregate(employees$salary, list(job = employees$job), mean)
+    aggregate(salary ~ job, data = employees, FUN = mean)
 
 journalism:
 
